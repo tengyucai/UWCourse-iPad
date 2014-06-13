@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D91D81C1942CBC10025460E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D81B1942CBC10025460E /* Foundation.framework */; };
+		0D91D81E1942CBC10025460E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D81D1942CBC10025460E /* CoreGraphics.framework */; };
+		0D91D8201942CBC10025460E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D81F1942CBC10025460E /* UIKit.framework */; };
+		0D91D8221942CBC10025460E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D8211942CBC10025460E /* CoreData.framework */; };
+		0D91D8281942CBC10025460E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D8261942CBC10025460E /* InfoPlist.strings */; };
+		0D91D82A1942CBC10025460E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8291942CBC10025460E /* main.m */; };
+		0D91D82E1942CBC10025460E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D82D1942CBC10025460E /* AppDelegate.m */; };
+		0D91D8311942CBC10025460E /* UWCourse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D82F1942CBC10025460E /* UWCourse.xcdatamodeld */; };
+		0D91D8331942CBC10025460E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D8321942CBC10025460E /* Images.xcassets */; };
+		0D91D83A1942CBC10025460E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D8391942CBC10025460E /* XCTest.framework */; };
+		0D91D83B1942CBC10025460E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D81B1942CBC10025460E /* Foundation.framework */; };
+		0D91D83C1942CBC10025460E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D81F1942CBC10025460E /* UIKit.framework */; };
+		0D91D83D1942CBC10025460E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D8211942CBC10025460E /* CoreData.framework */; };
+		0D91D8451942CBC10025460E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D8431942CBC10025460E /* InfoPlist.strings */; };
+		0D91D8471942CBC10025460E /* UWCourseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8461942CBC10025460E /* UWCourseTests.m */; };
+		0D91D8521942D0510025460E /* CommonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8511942D0510025460E /* CommonVC.m */; };
+		0D91D8551942E0C00025460E /* SubjectScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8541942E0C00025460E /* SubjectScheduleTVC.m */; };
+		0D91D8581942E67C0025460E /* CourseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8571942E67C0025460E /* CourseTableVC.m */; };
+		0D91D86619435F280025460E /* Course List@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D86219435F280025460E /* Course List@2x.png */; };
+		0D91D86719435F280025460E /* My Courses@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D86319435F280025460E /* My Courses@2x.png */; };
+		0D91D86819435F280025460E /* Time Table@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D86419435F280025460E /* Time Table@2x.png */; };
+		0D91D86919435F280025460E /* Watch List@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D91D86519435F280025460E /* Watch List@2x.png */; };
+		0D91D86C194378760025460E /* SubjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D86B194378760025460E /* SubjectVC.m */; };
+		0D91D86F194386F60025460E /* CourseTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D86E194386F60025460E /* CourseTVC.m */; };
+		0D91D87219438D150025460E /* CustomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D87119438D150025460E /* CustomVC.m */; };
+		0D91D87619438EE20025460E /* CourseFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D87419438EE20025460E /* CourseFetcher.m */; };
+		0D91D87E1943AAEC0025460E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D87D1943AAEC0025460E /* Reachability.m */; };
+		0D91D8971945097C0025460E /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8961945097C0025460E /* CWStatusBarNotification.m */; };
+		0D91D89B19451A000025460E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D89A19451A000025460E /* CustomCell.m */; };
+		0D91D89E194548500025460E /* CourseDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D89D194548500025460E /* CourseDetailVC.m */; };
+		0D91D8A1194549E00025460E /* CourseDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8A0194549E00025460E /* CourseDetailCell.m */; };
+		0D91D8A41945592C0025460E /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8A31945592C0025460E /* WebViewVC.m */; };
+		0D91D8A9194577F10025460E /* SubjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D91D8A8194577F10025460E /* SubjectCell.m */; };
+		0DCE902D1946A717002C72BE /* CourseTableFrameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE902C1946A717002C72BE /* CourseTableFrameVC.m */; };
+		0DCE90311946D847002C72BE /* MiniCourseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE90301946D847002C72BE /* MiniCourseTableVC.m */; };
+		0DCE90361947D7BA002C72BE /* CourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE90351947D7BA002C72BE /* CourseCell.m */; };
+		0DCE9041194A1A28002C72BE /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE903B194A1A28002C72BE /* background1.png */; };
+		0DCE9042194A1A28002C72BE /* background1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE903C194A1A28002C72BE /* background1@2x.png */; };
+		0DCE9043194A1A28002C72BE /* background2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE903D194A1A28002C72BE /* background2@2x.png */; };
+		0DCE9044194A1A28002C72BE /* backgroung2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE903E194A1A28002C72BE /* backgroung2.png */; };
+		0DCE9045194A1A28002C72BE /* course_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE903F194A1A28002C72BE /* course_list@2x.png */; };
+		0DCE9046194A1A28002C72BE /* time_table@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE9040194A1A28002C72BE /* time_table@2x.png */; };
+		0DCE9049194A417E002C72BE /* CourseTableContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE9048194A417E002C72BE /* CourseTableContainerVC.m */; };
+		0DCE904D194A4B10002C72BE /* UniversityOfWaterloo_logo_horiz_bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE904C194A4B10002C72BE /* UniversityOfWaterloo_logo_horiz_bk.png */; };
+		0DCE904F194A4BCA002C72BE /* UniversityOfWaterloo_logo_horiz_rgb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE904E194A4BCA002C72BE /* UniversityOfWaterloo_logo_horiz_rgb.png */; };
+		0DCE9052194A5486002C72BE /* CourseFrameDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE9051194A5486002C72BE /* CourseFrameDetailVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D91D83E1942CBC10025460E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D91D8101942CBC10025460E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D91D8171942CBC10025460E;
+			remoteInfo = UWCourse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D91D8181942CBC10025460E /* UWCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D91D81B1942CBC10025460E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D91D81D1942CBC10025460E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D91D81F1942CBC10025460E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0D91D8211942CBC10025460E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D91D8251942CBC10025460E /* UWCourse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWCourse-Info.plist"; sourceTree = "<group>"; };
+		0D91D8271942CBC10025460E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D91D8291942CBC10025460E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D91D82B1942CBC10025460E /* UWCourse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWCourse-Prefix.pch"; sourceTree = "<group>"; };
+		0D91D82C1942CBC10025460E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D91D82D1942CBC10025460E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D91D8301942CBC10025460E /* UWCourse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWCourse.xcdatamodel; sourceTree = "<group>"; };
+		0D91D8321942CBC10025460E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0D91D8381942CBC10025460E /* UWCourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWCourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D91D8391942CBC10025460E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0D91D8421942CBC10025460E /* UWCourseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UWCourseTests-Info.plist"; sourceTree = "<group>"; };
+		0D91D8441942CBC10025460E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D91D8461942CBC10025460E /* UWCourseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWCourseTests.m; sourceTree = "<group>"; };
+		0D91D8501942D0510025460E /* CommonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonVC.h; sourceTree = "<group>"; };
+		0D91D8511942D0510025460E /* CommonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonVC.m; sourceTree = "<group>"; };
+		0D91D8531942E0C00025460E /* SubjectScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectScheduleTVC.h; sourceTree = "<group>"; };
+		0D91D8541942E0C00025460E /* SubjectScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectScheduleTVC.m; sourceTree = "<group>"; };
+		0D91D8561942E67C0025460E /* CourseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableVC.h; sourceTree = "<group>"; };
+		0D91D8571942E67C0025460E /* CourseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableVC.m; sourceTree = "<group>"; };
+		0D91D86219435F280025460E /* Course List@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Course List@2x.png"; sourceTree = "<group>"; };
+		0D91D86319435F280025460E /* My Courses@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My Courses@2x.png"; sourceTree = "<group>"; };
+		0D91D86419435F280025460E /* Time Table@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time Table@2x.png"; sourceTree = "<group>"; };
+		0D91D86519435F280025460E /* Watch List@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Watch List@2x.png"; sourceTree = "<group>"; };
+		0D91D86A194378760025460E /* SubjectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectVC.h; sourceTree = "<group>"; };
+		0D91D86B194378760025460E /* SubjectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectVC.m; sourceTree = "<group>"; };
+		0D91D86D194386F60025460E /* CourseTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTVC.h; sourceTree = "<group>"; };
+		0D91D86E194386F60025460E /* CourseTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTVC.m; sourceTree = "<group>"; };
+		0D91D87019438D150025460E /* CustomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVC.h; sourceTree = "<group>"; };
+		0D91D87119438D150025460E /* CustomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVC.m; sourceTree = "<group>"; };
+		0D91D87319438EE20025460E /* CourseFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseFetcher.h; sourceTree = "<group>"; };
+		0D91D87419438EE20025460E /* CourseFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseFetcher.m; sourceTree = "<group>"; };
+		0D91D87519438EE20025460E /* UWAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWAPI.h; sourceTree = "<group>"; };
+		0D91D87C1943AAEC0025460E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = SOURCE_ROOT; };
+		0D91D87D1943AAEC0025460E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = SOURCE_ROOT; };
+		0D91D8951945097C0025460E /* CWStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStatusBarNotification.h; sourceTree = SOURCE_ROOT; };
+		0D91D8961945097C0025460E /* CWStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStatusBarNotification.m; sourceTree = SOURCE_ROOT; };
+		0D91D89919451A000025460E /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		0D91D89A19451A000025460E /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		0D91D89C1945484F0025460E /* CourseDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailVC.h; sourceTree = "<group>"; };
+		0D91D89D194548500025460E /* CourseDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailVC.m; sourceTree = "<group>"; };
+		0D91D89F194549E00025460E /* CourseDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailCell.h; sourceTree = "<group>"; };
+		0D91D8A0194549E00025460E /* CourseDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailCell.m; sourceTree = "<group>"; };
+		0D91D8A21945592C0025460E /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
+		0D91D8A31945592C0025460E /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		0D91D8A7194577F10025460E /* SubjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectCell.h; sourceTree = "<group>"; };
+		0D91D8A8194577F10025460E /* SubjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectCell.m; sourceTree = "<group>"; };
+		0DCE902B1946A717002C72BE /* CourseTableFrameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableFrameVC.h; sourceTree = "<group>"; };
+		0DCE902C1946A717002C72BE /* CourseTableFrameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableFrameVC.m; sourceTree = "<group>"; };
+		0DCE902F1946D847002C72BE /* MiniCourseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniCourseTableVC.h; sourceTree = "<group>"; };
+		0DCE90301946D847002C72BE /* MiniCourseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniCourseTableVC.m; sourceTree = "<group>"; };
+		0DCE90341947D7BA002C72BE /* CourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCell.h; sourceTree = "<group>"; };
+		0DCE90351947D7BA002C72BE /* CourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCell.m; sourceTree = "<group>"; };
+		0DCE903B194A1A28002C72BE /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
+		0DCE903C194A1A28002C72BE /* background1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background1@2x.png"; sourceTree = "<group>"; };
+		0DCE903D194A1A28002C72BE /* background2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background2@2x.png"; sourceTree = "<group>"; };
+		0DCE903E194A1A28002C72BE /* backgroung2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroung2.png; sourceTree = "<group>"; };
+		0DCE903F194A1A28002C72BE /* course_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course_list@2x.png"; sourceTree = "<group>"; };
+		0DCE9040194A1A28002C72BE /* time_table@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time_table@2x.png"; sourceTree = "<group>"; };
+		0DCE9047194A417E002C72BE /* CourseTableContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableContainerVC.h; sourceTree = "<group>"; };
+		0DCE9048194A417E002C72BE /* CourseTableContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableContainerVC.m; sourceTree = "<group>"; };
+		0DCE904C194A4B10002C72BE /* UniversityOfWaterloo_logo_horiz_bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UniversityOfWaterloo_logo_horiz_bk.png; path = UniversityOfWaterloo_logo_horiz_bk/UniversityOfWaterloo_logo_horiz_bk.png; sourceTree = "<group>"; };
+		0DCE904E194A4BCA002C72BE /* UniversityOfWaterloo_logo_horiz_rgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UniversityOfWaterloo_logo_horiz_rgb.png; path = UniversityOfWaterloo_logo_horiz_colour/UniversityOfWaterloo_logo_horiz_rgb.png; sourceTree = "<group>"; };
+		0DCE9050194A5486002C72BE /* CourseFrameDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseFrameDetailVC.h; sourceTree = "<group>"; };
+		0DCE9051194A5486002C72BE /* CourseFrameDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseFrameDetailVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D91D8151942CBC10025460E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D91D81E1942CBC10025460E /* CoreGraphics.framework in Frameworks */,
+				0D91D8221942CBC10025460E /* CoreData.framework in Frameworks */,
+				0D91D8201942CBC10025460E /* UIKit.framework in Frameworks */,
+				0D91D81C1942CBC10025460E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D91D8351942CBC10025460E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D91D83A1942CBC10025460E /* XCTest.framework in Frameworks */,
+				0D91D83D1942CBC10025460E /* CoreData.framework in Frameworks */,
+				0D91D83C1942CBC10025460E /* UIKit.framework in Frameworks */,
+				0D91D83B1942CBC10025460E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D91D80F1942CBC10025460E = {
+			isa = PBXGroup;
+			children = (
+				0D91D8231942CBC10025460E /* UWCourse */,
+				0D91D8401942CBC10025460E /* UWCourseTests */,
+				0D91D81A1942CBC10025460E /* Frameworks */,
+				0D91D8191942CBC10025460E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D91D8191942CBC10025460E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D8181942CBC10025460E /* UWCourse.app */,
+				0D91D8381942CBC10025460E /* UWCourseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D91D81A1942CBC10025460E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D81B1942CBC10025460E /* Foundation.framework */,
+				0D91D81D1942CBC10025460E /* CoreGraphics.framework */,
+				0D91D81F1942CBC10025460E /* UIKit.framework */,
+				0D91D8211942CBC10025460E /* CoreData.framework */,
+				0D91D8391942CBC10025460E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D91D8231942CBC10025460E /* UWCourse */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D82C1942CBC10025460E /* AppDelegate.h */,
+				0D91D82D1942CBC10025460E /* AppDelegate.m */,
+				0D91D8531942E0C00025460E /* SubjectScheduleTVC.h */,
+				0D91D8541942E0C00025460E /* SubjectScheduleTVC.m */,
+				0DCE90371947D7E1002C72BE /* Subject */,
+				0DCE90381947D7EA002C72BE /* Course */,
+				0DCE90391947D7F2002C72BE /* Custom */,
+				0DCE903A1947D7FA002C72BE /* CourseDetail */,
+				0DCE902E1946CDFE002C72BE /* CourseTable */,
+				0D91D8A5194569D80025460E /* WebView */,
+				0D91D8A6194569E50025460E /* Common */,
+				0D91D898194509860025460E /* StatusBarNotification */,
+				0D91D89419440B250025460E /* Reachability */,
+				0D91D87819438EFC0025460E /* CourseFetcher */,
+				0D91D8321942CBC10025460E /* Images.xcassets */,
+				0D91D82F1942CBC10025460E /* UWCourse.xcdatamodeld */,
+				0D91D8241942CBC10025460E /* Supporting Files */,
+			);
+			path = UWCourse;
+			sourceTree = "<group>";
+		};
+		0D91D8241942CBC10025460E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D85919435D7A0025460E /* images */,
+				0D91D8251942CBC10025460E /* UWCourse-Info.plist */,
+				0D91D8261942CBC10025460E /* InfoPlist.strings */,
+				0D91D8291942CBC10025460E /* main.m */,
+				0D91D82B1942CBC10025460E /* UWCourse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D91D8401942CBC10025460E /* UWCourseTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D8461942CBC10025460E /* UWCourseTests.m */,
+				0D91D8411942CBC10025460E /* Supporting Files */,
+			);
+			path = UWCourseTests;
+			sourceTree = "<group>";
+		};
+		0D91D8411942CBC10025460E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D8421942CBC10025460E /* UWCourseTests-Info.plist */,
+				0D91D8431942CBC10025460E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D91D85919435D7A0025460E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0DCE904E194A4BCA002C72BE /* UniversityOfWaterloo_logo_horiz_rgb.png */,
+				0DCE904C194A4B10002C72BE /* UniversityOfWaterloo_logo_horiz_bk.png */,
+				0DCE903B194A1A28002C72BE /* background1.png */,
+				0DCE903C194A1A28002C72BE /* background1@2x.png */,
+				0DCE903D194A1A28002C72BE /* background2@2x.png */,
+				0DCE903E194A1A28002C72BE /* backgroung2.png */,
+				0DCE903F194A1A28002C72BE /* course_list@2x.png */,
+				0DCE9040194A1A28002C72BE /* time_table@2x.png */,
+				0D91D86219435F280025460E /* Course List@2x.png */,
+				0D91D86319435F280025460E /* My Courses@2x.png */,
+				0D91D86419435F280025460E /* Time Table@2x.png */,
+				0D91D86519435F280025460E /* Watch List@2x.png */,
+			);
+			path = images;
+			sourceTree = SOURCE_ROOT;
+		};
+		0D91D87819438EFC0025460E /* CourseFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D87319438EE20025460E /* CourseFetcher.h */,
+				0D91D87419438EE20025460E /* CourseFetcher.m */,
+				0D91D87519438EE20025460E /* UWAPI.h */,
+			);
+			name = CourseFetcher;
+			sourceTree = "<group>";
+		};
+		0D91D89419440B250025460E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D87C1943AAEC0025460E /* Reachability.h */,
+				0D91D87D1943AAEC0025460E /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		0D91D898194509860025460E /* StatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D8951945097C0025460E /* CWStatusBarNotification.h */,
+				0D91D8961945097C0025460E /* CWStatusBarNotification.m */,
+			);
+			name = StatusBarNotification;
+			sourceTree = "<group>";
+		};
+		0D91D8A5194569D80025460E /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D8A21945592C0025460E /* WebViewVC.h */,
+				0D91D8A31945592C0025460E /* WebViewVC.m */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		0D91D8A6194569E50025460E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D8501942D0510025460E /* CommonVC.h */,
+				0D91D8511942D0510025460E /* CommonVC.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		0DCE902E1946CDFE002C72BE /* CourseTable */ = {
+			isa = PBXGroup;
+			children = (
+				0DCE902F1946D847002C72BE /* MiniCourseTableVC.h */,
+				0DCE90301946D847002C72BE /* MiniCourseTableVC.m */,
+				0D91D8561942E67C0025460E /* CourseTableVC.h */,
+				0D91D8571942E67C0025460E /* CourseTableVC.m */,
+				0DCE9047194A417E002C72BE /* CourseTableContainerVC.h */,
+				0DCE9048194A417E002C72BE /* CourseTableContainerVC.m */,
+				0DCE902B1946A717002C72BE /* CourseTableFrameVC.h */,
+				0DCE902C1946A717002C72BE /* CourseTableFrameVC.m */,
+				0DCE9050194A5486002C72BE /* CourseFrameDetailVC.h */,
+				0DCE9051194A5486002C72BE /* CourseFrameDetailVC.m */,
+			);
+			name = CourseTable;
+			sourceTree = "<group>";
+		};
+		0DCE90371947D7E1002C72BE /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D86A194378760025460E /* SubjectVC.h */,
+				0D91D86B194378760025460E /* SubjectVC.m */,
+				0D91D8A7194577F10025460E /* SubjectCell.h */,
+				0D91D8A8194577F10025460E /* SubjectCell.m */,
+			);
+			name = Subject;
+			sourceTree = "<group>";
+		};
+		0DCE90381947D7EA002C72BE /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D86D194386F60025460E /* CourseTVC.h */,
+				0D91D86E194386F60025460E /* CourseTVC.m */,
+				0DCE90341947D7BA002C72BE /* CourseCell.h */,
+				0DCE90351947D7BA002C72BE /* CourseCell.m */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		0DCE90391947D7F2002C72BE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D87019438D150025460E /* CustomVC.h */,
+				0D91D87119438D150025460E /* CustomVC.m */,
+				0D91D89919451A000025460E /* CustomCell.h */,
+				0D91D89A19451A000025460E /* CustomCell.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		0DCE903A1947D7FA002C72BE /* CourseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D89C1945484F0025460E /* CourseDetailVC.h */,
+				0D91D89D194548500025460E /* CourseDetailVC.m */,
+				0D91D89F194549E00025460E /* CourseDetailCell.h */,
+				0D91D8A0194549E00025460E /* CourseDetailCell.m */,
+			);
+			name = CourseDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D91D8171942CBC10025460E /* UWCourse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D91D84A1942CBC10025460E /* Build configuration list for PBXNativeTarget "UWCourse" */;
+			buildPhases = (
+				0D91D8141942CBC10025460E /* Sources */,
+				0D91D8151942CBC10025460E /* Frameworks */,
+				0D91D8161942CBC10025460E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UWCourse;
+			productName = UWCourse;
+			productReference = 0D91D8181942CBC10025460E /* UWCourse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D91D8371942CBC10025460E /* UWCourseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D91D84D1942CBC10025460E /* Build configuration list for PBXNativeTarget "UWCourseTests" */;
+			buildPhases = (
+				0D91D8341942CBC10025460E /* Sources */,
+				0D91D8351942CBC10025460E /* Frameworks */,
+				0D91D8361942CBC10025460E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D91D83F1942CBC10025460E /* PBXTargetDependency */,
+			);
+			name = UWCourseTests;
+			productName = UWCourseTests;
+			productReference = 0D91D8381942CBC10025460E /* UWCourseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D91D8101942CBC10025460E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tengyu Cai";
+				TargetAttributes = {
+					0D91D8371942CBC10025460E = {
+						TestTargetID = 0D91D8171942CBC10025460E;
+					};
+				};
+			};
+			buildConfigurationList = 0D91D8131942CBC10025460E /* Build configuration list for PBXProject "UWCourse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D91D80F1942CBC10025460E;
+			productRefGroup = 0D91D8191942CBC10025460E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D91D8171942CBC10025460E /* UWCourse */,
+				0D91D8371942CBC10025460E /* UWCourseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D91D8161942CBC10025460E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCE9042194A1A28002C72BE /* background1@2x.png in Resources */,
+				0DCE9044194A1A28002C72BE /* backgroung2.png in Resources */,
+				0D91D86719435F280025460E /* My Courses@2x.png in Resources */,
+				0D91D86619435F280025460E /* Course List@2x.png in Resources */,
+				0D91D8281942CBC10025460E /* InfoPlist.strings in Resources */,
+				0DCE9041194A1A28002C72BE /* background1.png in Resources */,
+				0DCE9046194A1A28002C72BE /* time_table@2x.png in Resources */,
+				0DCE9045194A1A28002C72BE /* course_list@2x.png in Resources */,
+				0DCE9043194A1A28002C72BE /* background2@2x.png in Resources */,
+				0DCE904F194A4BCA002C72BE /* UniversityOfWaterloo_logo_horiz_rgb.png in Resources */,
+				0DCE904D194A4B10002C72BE /* UniversityOfWaterloo_logo_horiz_bk.png in Resources */,
+				0D91D8331942CBC10025460E /* Images.xcassets in Resources */,
+				0D91D86919435F280025460E /* Watch List@2x.png in Resources */,
+				0D91D86819435F280025460E /* Time Table@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D91D8361942CBC10025460E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D91D8451942CBC10025460E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D91D8141942CBC10025460E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D91D87219438D150025460E /* CustomVC.m in Sources */,
+				0D91D8311942CBC10025460E /* UWCourse.xcdatamodeld in Sources */,
+				0D91D8971945097C0025460E /* CWStatusBarNotification.m in Sources */,
+				0D91D87619438EE20025460E /* CourseFetcher.m in Sources */,
+				0DCE9052194A5486002C72BE /* CourseFrameDetailVC.m in Sources */,
+				0D91D87E1943AAEC0025460E /* Reachability.m in Sources */,
+				0D91D86F194386F60025460E /* CourseTVC.m in Sources */,
+				0DCE902D1946A717002C72BE /* CourseTableFrameVC.m in Sources */,
+				0D91D82E1942CBC10025460E /* AppDelegate.m in Sources */,
+				0D91D82A1942CBC10025460E /* main.m in Sources */,
+				0DCE90311946D847002C72BE /* MiniCourseTableVC.m in Sources */,
+				0D91D8A9194577F10025460E /* SubjectCell.m in Sources */,
+				0D91D8A41945592C0025460E /* WebViewVC.m in Sources */,
+				0D91D8A1194549E00025460E /* CourseDetailCell.m in Sources */,
+				0D91D86C194378760025460E /* SubjectVC.m in Sources */,
+				0D91D8551942E0C00025460E /* SubjectScheduleTVC.m in Sources */,
+				0D91D8581942E67C0025460E /* CourseTableVC.m in Sources */,
+				0DCE90361947D7BA002C72BE /* CourseCell.m in Sources */,
+				0DCE9049194A417E002C72BE /* CourseTableContainerVC.m in Sources */,
+				0D91D8521942D0510025460E /* CommonVC.m in Sources */,
+				0D91D89E194548500025460E /* CourseDetailVC.m in Sources */,
+				0D91D89B19451A000025460E /* CustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D91D8341942CBC10025460E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D91D8471942CBC10025460E /* UWCourseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D91D83F1942CBC10025460E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D91D8171942CBC10025460E /* UWCourse */;
+			targetProxy = 0D91D83E1942CBC10025460E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D91D8261942CBC10025460E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D91D8271942CBC10025460E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0D91D8431942CBC10025460E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D91D8441942CBC10025460E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D91D8481942CBC10025460E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0D91D8491942CBC10025460E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D91D84B1942CBC10025460E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWCourse/UWCourse-Prefix.pch";
+				INFOPLIST_FILE = "UWCourse/UWCourse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0D91D84C1942CBC10025460E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWCourse/UWCourse-Prefix.pch";
+				INFOPLIST_FILE = "UWCourse/UWCourse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0D91D84E1942CBC10025460E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UWCourse.app/UWCourse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWCourse/UWCourse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UWCourseTests/UWCourseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0D91D84F1942CBC10025460E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UWCourse.app/UWCourse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UWCourse/UWCourse-Prefix.pch";
+				INFOPLIST_FILE = "UWCourseTests/UWCourseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D91D8131942CBC10025460E /* Build configuration list for PBXProject "UWCourse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D91D8481942CBC10025460E /* Debug */,
+				0D91D8491942CBC10025460E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D91D84A1942CBC10025460E /* Build configuration list for PBXNativeTarget "UWCourse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D91D84B1942CBC10025460E /* Debug */,
+				0D91D84C1942CBC10025460E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D91D84D1942CBC10025460E /* Build configuration list for PBXNativeTarget "UWCourseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D91D84E1942CBC10025460E /* Debug */,
+				0D91D84F1942CBC10025460E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D91D82F1942CBC10025460E /* UWCourse.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D91D8301942CBC10025460E /* UWCourse.xcdatamodel */,
+			);
+			currentVersion = 0D91D8301942CBC10025460E /* UWCourse.xcdatamodel */;
+			path = UWCourse.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0D91D8101942CBC10025460E /* Project object */;
+}
